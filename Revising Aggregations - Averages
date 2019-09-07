@@ -1,0 +1,5 @@
+#Problem: Revising Aggregations - Averages
+
+select avg(population)
+from city
+where DISTRICT = 'California';
