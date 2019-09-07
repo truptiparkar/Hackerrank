@@ -1,0 +1,15 @@
+#Problem: https://www.hackerrank.com/contests/mis531fall2019/challenges/full-score
+
+SELECT h.hacker_id, 
+       h.NAME 
+FROM   hackers h 
+JOIN   submissions s 
+ON     s.hacker_id = h.hacker_id 
+JOIN   challenges c 
+ON     s.challenge_id = c.challenge_id 
+JOIN   difficulty d 
+ON     c. difficulty_level = d.difficulty_level 
+WHERE  s.score = d.score 
+AND    c.difficulty_level = d.difficulty_level
+GROUP BY h.hacker_id, h.NAME 
+HAVING count(s.hacker_id) > 1 ORDER BY count(s.hacker_id) DESC , h.hacker_id;
