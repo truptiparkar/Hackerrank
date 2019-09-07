@@ -1,0 +1,4 @@
+#Problem: https://www.hackerrank.com/contests/mis531fall2019/challenges/average-population
+
+select CAST(avg(POPULATION) as INT)
+from city;
