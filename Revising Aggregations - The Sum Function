@@ -1,0 +1,5 @@
+#Problem: https://www.hackerrank.com/contests/mis531fall2019/challenges/revising-aggregations-sum/submissions/database/1315640950
+
+select sum(POPULATION)
+from city
+where DISTRICT = 'California';
