@@ -1,0 +1,5 @@
+# https://www.hackerrank.com/contests/mis531fall2019/challenges/select-by-id/submissions/database/1315640753
+
+select * 
+from city 
+where id = 1661;
