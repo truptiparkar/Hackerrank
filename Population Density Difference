@@ -1,0 +1,4 @@
+#Problem: https://www.hackerrank.com/contests/mis531fall2019/challenges/population-density-difference
+
+select (max(POPULATION) - min(POPULATION))
+from CITY;                              
