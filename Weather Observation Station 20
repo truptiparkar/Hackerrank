@@ -1,0 +1,5 @@
+#Problem: https://www.hackerrank.com/contests/mis531fall2019/challenges/weather-observation-station-20
+
+
+select  Round(median(LAT_N), 4) 
+from STATION;
