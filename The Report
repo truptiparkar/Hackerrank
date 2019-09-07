@@ -1,0 +1,8 @@
+#Problem: https://www.hackerrank.com/contests/mis531fall2019/challenges/the-report 
+
+
+SELECT (case when g.Grade<8 Then 'NULL' else s.Name end) name, g.Grade, s.Marks FROM Students s 
+JOIN Grades g ON s.Marks BETWEEN g.Min_Mark AND g.Max_Mark
+order by grade desc, name, marks;
+
+
