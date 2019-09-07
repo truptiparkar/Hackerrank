@@ -1,0 +1,6 @@
+#Problem: https://www.hackerrank.com/contests/mis531fall2019/challenges/weather-observation-station-4
+
+
+select (count(city) - count(DISTINCT city))
+from STATION;
+        
