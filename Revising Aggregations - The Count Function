@@ -1,0 +1,5 @@
+#Problem: https://www.hackerrank.com/contests/mis531fall2019/challenges/revising-aggregations-the-count-function/
+
+select count(id)
+from city
+where POPULATION > 100000 ;
